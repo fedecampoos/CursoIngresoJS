@@ -5,38 +5,66 @@ function mostrar()
 		var alumnos;
 		var promedio;
 		var contador;
+		var edad ;
 		contador = 0
+		var respuesta = "si"
+		var cantidadDeNotas
 
-		alumnos=prompt("ingrese el nombre del alumno");
+		
 
-		while(contador > 3 )
+		
+			
+			
+
+
+		
+		alumnos = prompt("ingrese el nombre del alumno")
+		while (contador > 2 )
 			{
 				alumnos= prompt("no ingrese mas") 
-			}	
+				 
+				
 
-			notas= prompt("ingrese su nota")
-			notas=parseInt(notas);
+			 edad=prompt("ingrese su edad")
+			while(edad < 0 || edad > 100  )
+				{
 
-		while(notas < 0 || notas >10  )
-		{
+				edad = prompt("reingrese su edad")
+				edad = parseInt(edad)
 
-			notas=prompt("reingresar nota");
-			notas=parseInt(nota);
-			nota ++
+					}
+				notas=prompt("reingresar nota");
+			while(isNa(notas) || notas < 0 || notas >10  )
+			{
 
-		}
+				notas=prompt("reingresar nota");
+				notas=parseInt(notas);
+				cantidadDeNotas ++
 
-		while(sexo != "f" && sexo !="m" )
-		{
+			}
+			
 			sexo=prompt("ingresar sexo");
 
+			while(sexo != "f" && sexo !="m" )
+			{
+				sexo=prompt("ingresar sexo");
+
 
 		}
 
 
-		respuesta=prompt("quiere seguir");
+		
+		
 
+
+		
+    }
+
+    promedio = notas/6
 
 
 
 }
+
+
+
